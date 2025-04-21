@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: rgb(219, 215, 215);
+}
+
+header{
+    background-color: gray;
+    
+}
+
+header > h1{
+    text-align: center;
+    color: white;
+    padding: 30px;
+}
+
+#burguer{
+    display: block;
+    background-color: #403d3d;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    cursor: pointer;
+    
+}
+
+#burguer:hover{
+    background-color: rgb(248, 249, 251);
+    color: black;
+}
+
+nav {
+    display: none; /*   DISPLAY: BLOCK;
+    o elemento ocupa 100% da largura disponível do seu elemento pai e é exibido em uma nova linha, evitando que outros elementos sejam colocados ao seu lado.  Ao contrário do display: inline, que permite que elementos fiquem na mesma linha, o block força o elemento a começar uma nova linha, garantindo que nenhum outro elemento seja exibido no mesmo espaço horizontal. */
+}
+nav > ul{
+    list-style-type: none;
+}
+
+nav > ul > li > a  { /* pode ser:      nav > a {}    */
+    display: block;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+    background-color: rgb(92, 88, 88);
+    color: white;
+    border-top: 2px solid rgb(133, 128, 128);
+}
+
+
+a:hover{
+    background-color: rgb(42, 69, 136);
+}
+
+main{
+    width: 90%; /*isso define a largura do objeto MAIN, onde está o artigo, ajusta-se conforme a tela. se eu colocar em pixel, fica fixo*/
+    margin: auto;
+    margin-top: 10px;
+}
+
+article h1{
+    text-align: center;
+    padding-bottom: 10px;
+}
+article{
+    margin: auto;
+    padding: 10px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+article > p{
+    text-indent: 20px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
